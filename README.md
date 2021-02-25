@@ -3,25 +3,25 @@
 clone the repository 
 ```
 ## Project setup
-```
+
 npm install
 ```
 
-Vue Install
-```
+##  Vue Install
+
 npm -g i @vue/cli
 ```
 
-To start the project
+## To start the project
 ```
 npm run serve
 ```
 
-To use the project need to have Weather Api Key
+## To use the project need to have Weather Api Key
 ```
 
 [Weather Api](https://home.openweathermap.org/)
 ```
-The Api need position in Vur.js file
+The Api position in App.vue file
 ```
 
