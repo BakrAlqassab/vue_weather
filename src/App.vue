@@ -1,6 +1,6 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <div class="app">
+  <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ?'warm': typeof weather.main != 'undefined' && weather.main.temp < 3 ? 'freeze': '' ">
     <main>
       <div class="search-box">
         <input
@@ -9,7 +9,6 @@
           class="search-bar"
           placeholder="Search..."
           v-model="query"
-<<<<<<< HEAD
           @keypress="fetchWeather"
         />
         <!-- v-on:keypress='fetch' -->
@@ -27,22 +26,6 @@
           <div class="weather">{{weather.weather[0].main}}</div>
         </div>
       </div>
-=======
-        />
-        {{ query }}
-      </div>
-      <div class="weather-wrap">
-        <div class="location-box">
-          <div class="location">Hämeenlinna,Finland</div>
-          <div class="date">Wenesdy 24 Febrauary 2021</div>
-        </div>
-      </div>
-      <div class="weather-box">
-        <!-- press alt + 0176 to have temp degree sign  -->
-        <div class="temp">9°C</div>
-        <div class="weather">Snowing</div>
-      </div>
->>>>>>> 2e6305d174c9ec25aa4946e5e12597471ebade08
     </main>
   </div>
 </template>
@@ -53,8 +36,7 @@ export default {
   name: "App",
   data() {
     return {
-<<<<<<< HEAD
-      api_key: "ENTER YOUR API KEY HERE",
+      api_key: "ENTER YOUR API KEY HERE ",
       url_base: "https://api.openweathermap.org/data/2.5/",
       query: "",
       weather: {},
@@ -88,18 +70,6 @@ export default {
 
     }
   },
-=======
-      api_key: "f77f4ec65ca8b253c15799a62d133e2d",
-      url_base:'https://api.openweathermap.org/data/2.5/',
-      query: "",
-      weather:{},
-    };
-  },
-  methods:{
-
-    
-  }
->>>>>>> 2e6305d174c9ec25aa4946e5e12597471ebade08
 };
 </script>
 

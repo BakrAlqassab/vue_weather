@@ -20,6 +20,14 @@ body {
     color: #2c3e50;
     margin-top: 60px; */
 }
+#app.warm {
+    background-image: url("../images/warm-bg.jpg");
+
+}
+#app.freeze {
+    background-image: url("../images/snowing_weather.jpg");
+
+}
 main {
   min-height: 100vh;
   padding: 25px;
