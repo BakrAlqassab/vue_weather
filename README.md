@@ -14,8 +14,7 @@ npm -g i @vue/cli
 ```
 
 ## To start the project
-```
-```
+
 npm run serve
 ```
 
