@@ -12,6 +12,7 @@ npm install
 npm -g i @vue/cli
 ```
 ```
+
 ## To start the project
 ```
 ```
