@@ -1,24 +1,27 @@
 # vue_weather
 
+clone the repository 
+```
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Vue Install
+```
+npm -g i @vue/cli
+```
+
+To start the project
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+To use the project need to have Weather Api Key
 ```
 
-### Lints and fixes files
+[Weather Api](https://home.openweathermap.org/)
 ```
-npm run lint
+The Api need position in Vur.js file
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
