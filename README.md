@@ -16,7 +16,7 @@ npm -g i @vue/cli
 ```
 ```
 npm run serve
-
+```
 
 ## To use the project need to have Weather Api Key
 [Weather Api](https://home.openweathermap.org/)
