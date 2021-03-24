@@ -23,7 +23,7 @@ body {
 
 ::placeholder {
   color: white;
-  opacity: 1; /* Firefox */
+  opacity: 0.7; /* Firefox */
 }
 #app.warm {
     background-image: url("../images/warm-bg.jpg");
@@ -46,11 +46,13 @@ main {
 .search-box {
   width: 100%;
   margin-bottom: 30px;
+  transition: 1s;
 }
 .search-box-bf {
   width: 80%;
   margin: 20em auto;
   margin-bottom: 30px;
+  transition: 1s;
 }
  /* .search-box.search-bar { */
  .search-bar {
