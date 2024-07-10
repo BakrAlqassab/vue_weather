@@ -1,34 +1,22 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <div
-    id="app"
-    :class= "
+  <div id="app" :class="
       typeof weather.main != 'undefined' && weather.main.temp > 16
         ? 'warm'
         : typeof weather.main != 'undefined' && weather.main.temp < 3
         ? 'freeze'
         : ''
-    "
-  >
+    ">
     <main>
-      <div  
-                                :class= "
+      <div :class="
       typeof weather.main != 'undefined' 
         ? 'search-box'
         : typeof weather.main === 'undefined' 
         ? 'search-box-bf'
         : ''
-    "
-      
-     >
-        <input
-          type="text"
-          name=""
-          class="search-bar"
-          placeholder="Search..."
-          v-model="query"
-          @keypress="fetchWeather"
-        />
+    ">
+        <input type="text" name="" class="search-bar" placeholder="Search..." v-model="query"
+          @keypress="fetchWeather" />
         <!-- v-on:keypress='fetch' -->
         <!-- {{ query }} -->
       </div>
@@ -55,10 +43,11 @@ import "./css/weather.css";
 export default {
   name: "App",
   data() {
-    return {
-      api_key: "f77f4ec65ca8b253c15799a62d133e2d",
+    // https://home.openweathermap.org/api_keys
+    return { 
+      api_key: process.env.WEATHER_API_KEY,
       url_base: "https://api.openweathermap.org/data/2.5/",
-      query: "",
+      query: "helsinki",
       weather: {},
     };
   },
